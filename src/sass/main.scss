@@ -1,5 +1,42 @@
-$bg: blue;
+$bg: #ccc;
+
+@mixin btn {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 15px;
+  margin: 15px;
+  font-size: 14px;
+}
 
 body {
   background-color: $bg;
+  text-align: center;
+}
+
+.botao {
+  background-color: aqua;
+  border: none;
+  margin: 15px;
+  padding: 15px;
+  font-size: 14px;
+}
+
+.banner {
+  background: gray;
+  padding: 50px;
+  margin-bottom: 25px;
+
+  &__btn {
+    // @include btn;
+    @extend .botao;
+    background-color: orange;
+    font-size: 1.5em;
+
+    &--danger {
+      // @include btn;
+      @extend .banner__btn;
+      background-color: red;
+    }
+  }
 }
