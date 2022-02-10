@@ -9,6 +9,6 @@
     "scss": "node-sass src/sass -o dist/css -w"
   },
   "devDependencies": {
-    "node-sass": "^4.14.1"
+    "node-sass": "^7.0.0"
   }
 }
